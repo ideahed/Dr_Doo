@@ -26,6 +26,8 @@ DrDoo::Application.routes.draw do
   #   end
   # end
 
+  root to: 'homes#index'
+  
   resources :complete_forms, only: [:show, :edit, :update]
   resources :notifications, only: [:create, :destroy]
   get 'complete_forms/:id/:user_id' => 'complete_forms#show', as: 'view_completed_form'
@@ -33,7 +35,7 @@ DrDoo::Application.routes.draw do
     root to: 'forms#index'
   end
 
-  root to: 'homes#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

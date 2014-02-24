@@ -73,4 +73,4 @@ end
 # gem 'debugger'
 
 # Required for Ruby on Rails development on Linux
-gem 'therubyracer'
+# gem 'therubyracer'
